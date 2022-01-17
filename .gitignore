@@ -1,0 +1,9 @@
+cv_academic/*.aux
+cv_academic/*.log
+cv_academic/*.pdf
+cv_academic/*.out
+
+cv_dev/*.aux
+cv_dev/*.log
+cv_dev/*.pdf
+cv_dev/*.out

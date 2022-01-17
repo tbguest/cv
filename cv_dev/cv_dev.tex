@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tristan Guest} \\ \vspace{1pt}
+    \small 902-830-0959 $|$ \href{mailto:x@x.com}{\underline{tristanguest@gmail.com}} \\
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/tristan-guest}} $|$
+    \href{https://github.com/...}{\underline{github.com/tbguest}} $|$
+    \href{https://reseachgate.net/...}{\underline{researchgate.net/profile/Tristan-Guest}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dalhousie University}{Halifax, NS, Canada}
+      {Ph.D., Physical Oceanography}{Sept. 2013 -- May 2020}
+    \resumeSubheading
+      {Dalhousie University}{Halifax, NS, Canada}
+      {B.Sc., Combined honours in Mathematics and Oceanography}{Sept. 2009 -- May 2013}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Back-end Developer and Chief Scientific Officer}{Jan. 2021 -- present}
+      {Luna Sea Solutions Inc.}{Lunenburg, NS, Canada}
+      \resumeItemListStart
+        \resumeItem{Built and maintained a web-map interface for visualizing ocean data (lunaoceans.app) as part of small team of three developers (React, Next.js, Mapbox). Worked alongside the CEO and marketing team to regularly deliver shippable features. Steer product to market.}
+        \resumeItem{Developed a REST API using AWS-Lambda/S3 and MongoDB to generate tidal current forecasts from tidal parameters stored in S3.}
+        \resumeItem{Built, administrated, and developed applications for a noSQL (MongoDB) database as part of the backkend of the LunaOceans web app.}
+        \resumeItem{Built a GPU-powered particle animation to visualize ocean currents and wind using Mapbox and WebGL.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Chief Technology Officer}{July 2020 -- Jan. 2021}
+      {Luna Sea Solutions Inc.}{Lunenburg, NS, Canada}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Database Administrator}{casual, Jun. 2020 -- present}
+    %   {Freewheeling Adventures Inc.}{The Lodge, NS, Canada}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {Doctoral Researcher and Data Scientist}{Sept. 2013 -- May 2020}
+      {Dalhousie University Ocean Acoustics Lab}{Halifax, NS, Canada}
+      \resumeItemListStart
+        \resumeItem{Desiged, organized, and carried out research programs addressing knowledge deficits in the field of coastal ocean dynamics}
+        \resumeItem{Built data pipelines and software (Python, Matlab) to process and visualize ocean data}
+        \resumeItem{sldfj}
+        \resumeItem{Authored multiple peer-reviewed academic papers, presented original reseach at domestic and international conferences}
+    \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{LunaOceans Web App} $|$ \emph{React/Next.js, Mapbox, MongoDB, Python, AWS, WebGL}}{Dec 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application with React as the frontend, deployed on Vercel}
+            \resumeItem{Built a particle animation program in WebGL for visualizing ocean currents and wind}
+            \resumeItem{Built back-end infrastructure to fetch and process data for use in the app (AWS, MongoDB, Python)}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Tide Forecast API} $|$ \emph{React/Next.js, Mapbox, MongoDB, Python, AWS}}{Sept 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built a REST API and interface to serve tide data generated on-the-fly by a novel forecast model}
+            \resumeItem{Built graphical tooling with Mapbox, React to provide intuitive access to the API}
+            \resumeItem{Uses MongoDB geoqueries to spatially reference user input and route to AWS S3}
+          \resumeItemListEnd      
+
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, HTML/CSS, Matlab, GLSL (WebGL), C} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, Next.js} \\
+     \textbf{Developer Tools}{: Git, AWS, MongoDB, VS Code} \\
+     \textbf{Libraries}{: Mapbox GL JS, pandas, NumPy, Matplotlib, opencv}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
