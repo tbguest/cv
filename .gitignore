@@ -1,9 +1,7 @@
 academic/*.aux
 academic/*.log
-academic/*.pdf
 academic/*.out
 
 dev/*.aux
 dev/*.log
-dev/*.pdf
 dev/*.out

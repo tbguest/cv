@@ -105,12 +105,6 @@
 
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Tristan Guest} \\ \vspace{1pt}
     \small 902-830-0959 $|$ \href{mailto:x@x.com}{\underline{tristanguest@gmail.com}} \\
@@ -125,10 +119,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Dalhousie University}{Halifax, NS, Canada}
-      {Ph.D., Physical Oceanography}{Sept. 2013 -- May 2020}
+      {Ph.D., Physical Oceanography}{2013 -- 2020}
     \resumeSubheading
       {Dalhousie University}{Halifax, NS, Canada}
-      {B.Sc., Combined honours in Mathematics and Oceanography}{Sept. 2009 -- May 2013}
+      {B.Sc., Combined honours in Mathematics and Oceanography}{2008 -- 2013}
   \resumeSubHeadingListEnd
 
 
@@ -137,22 +131,24 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Back-end Developer and Chief Scientific Officer}{Jan. 2021 -- present}
+      {Back-End Developer and Chief Scientific Officer}{Jan. 2021 -- present}
       {Luna Sea Solutions Inc.}{Lunenburg, NS, Canada}
       \resumeItemListStart
-        \resumeItem{Built and maintained a web-map interface for visualizing ocean data (lunaoceans.app) as part of small team of three developers (React, Next.js, Mapbox). Worked alongside the CEO and marketing team to regularly deliver shippable features. Steer product to market.}
-        \resumeItem{Developed a REST API using AWS-Lambda/S3 and MongoDB to generate tidal current forecasts from tidal parameters stored in S3.}
-        \resumeItem{Built, administrated, and developed applications for a noSQL (MongoDB) database as part of the backkend of the LunaOceans web app.}
-        \resumeItem{Built a GPU-powered particle animation to visualize ocean currents and wind using Mapbox and WebGL.}
+        \resumeItem{Build software and web products to help Luna transition from a services model to software- and data-as-a-service}
+        \resumeItem{Core contributor to the LunaOceans progressive web app for visualizing ocean data (\href{http://lunaoceans.app}{\underline{lunaoceans.app}})}
+        \resumeItem{Architect, build, and manage back-end functionality using Python, AWS, and MongoDB to handle high rates of data thoughput}
+        \resumeItem{Build UI components with React on Next.js to facilitate intuitive user experiences}
+        \resumeItem{Write and advise on technical reports and grey literature for industry clients and academic partners}
     \resumeItemListEnd
 
     \resumeSubheading
       {Chief Technology Officer}{July 2020 -- Jan. 2021}
       {Luna Sea Solutions Inc.}{Lunenburg, NS, Canada}
       \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+        \resumeItem{Managed development of software packages for tidal energy resource assessment and environmental monitoring}
+        \resumeItem{Used Python for statistical data analyses and validatation of software output, ensuring levels of quality in alignment with academic and industry standards}
+        \resumeItem{Established a company version control workflow using Git/Github}
+        \resumeItem{Wrote and advised on reports to funding bodies alongside academic and industry research partners}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -165,13 +161,14 @@
     % \resumeItemListEnd
 
     \resumeSubheading
-      {Doctoral Researcher and Data Scientist}{Sept. 2013 -- May 2020}
-      {Dalhousie University Ocean Acoustics Lab}{Halifax, NS, Canada}
+      {Doctoral Researcher}{Sept. 2013 -- May 2020}
+      {Department of Oceanography, Dalhousie University}{Halifax, NS, Canada}
       \resumeItemListStart
-        \resumeItem{Desiged, organized, and carried out research programs addressing knowledge deficits in the field of coastal ocean dynamics}
-        \resumeItem{Built data pipelines and software (Python, Matlab) to process and visualize ocean data}
-        \resumeItem{sldfj}
-        \resumeItem{Authored multiple peer-reviewed academic papers, presented original reseach at domestic and international conferences}
+        % \resumeItem{Desiged, organized, and carried out research programs addressing knowledge deficits in the field of coastal ocean and shoreline dynamics}
+        \resumeItem{Desiged and carried out research programs addressing knowledge deficits in the field of coastal ocean dynamics}
+        \resumeItem{Built data pipelines and software in Python and Matlab to process, analyze, and visualize ocean data}
+        \resumeItem{Specialized in tools and methods for time series analysis and image processing}
+        \resumeItem{Authored multiple peer-reviewed academic papers and presented research at domestic and international conferences}
     \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -192,19 +189,22 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{LunaOceans Web App} $|$ \emph{React/Next.js, Mapbox, MongoDB, Python, AWS, WebGL}}{Dec 2020 -- Present}
+          {\textbf{LunaOceans.app} $|$ \emph{TypeScript/React/Next.js, Python, MongoDB, AWS, Mapbox, WebGL}}{Dec 2020 -- Present}
           \resumeItemListStart
-            \resumeItem{Developed a full-stack web application with React as the frontend, deployed on Vercel}
-            \resumeItem{Built a particle animation program in WebGL for visualizing ocean currents and wind}
-            \resumeItem{Built back-end infrastructure to fetch and process data for use in the app (AWS, MongoDB, Python)}
+            \resumeItem{Built front-end components for a full-stack web-mapping application using React, deployed on Vercel}
+            % \resumeItem{Built back-end infrastructure to store, process, and serve data using AWS, MongoDB, Python, and Node.js}
+            \resumeItem{Used Python and AWS (S3, Lambda functions) to process and serve numerical model data as web-map tiles}
+            \resumeItem{Administered and developed applications for the app's noSQL database using Python and MongoDB}
+            \resumeItem{Built a GPU-powered particle animation to visualize ocean currents and wind using Mapbox and WebGL}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Tide Forecast API} $|$ \emph{React/Next.js, Mapbox, MongoDB, Python, AWS}}{Sept 2021 -- Present}
+          {\textbf{Tide Forecast API} $|$ \emph{Python, AWS, MongoDB, React/Next.js, Mapbox}}{Sept 2021 -- Present}
           \resumeItemListStart
-            \resumeItem{Built a REST API and interface to serve tide data generated on-the-fly by a novel forecast model}
-            \resumeItem{Built graphical tooling with Mapbox, React to provide intuitive access to the API}
-            \resumeItem{Uses MongoDB geoqueries to spatially reference user input and route to AWS S3}
+            \resumeItem{Built a REST API and interface to serve tide data generated on-demand by a novel forecast model}
+            % \resumeItem{Built tools and components with Mapbox and React to provide graphical access to the API}
+            \resumeItem{Architected and built a cost-efficient back end for generating and serving the predictions via AWS Lambda functions and S3}
+            \resumeItem{Used MongoDB geoqueries to spatially reference user requests and route forecasts via AWS Lambda and S3}
           \resumeItemListEnd      
 
     \resumeSubHeadingListEnd
@@ -216,10 +216,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, JavaScript, HTML/CSS, Matlab, GLSL (WebGL), C} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, Next.js} \\
-     \textbf{Developer Tools}{: Git, AWS, MongoDB, VS Code} \\
-     \textbf{Libraries}{: Mapbox GL JS, pandas, NumPy, Matplotlib, opencv}
+     \textbf{Languages}{: Python, JavaScript/TypeScript, HTML/CSS, Matlab; some C, GLSL (WebGL)} \\
+     \textbf{Frameworks}{: React, Next.js, Flask} \\
+     \textbf{Tools/Resources}{: Git, AWS, MongoDB, VS Code} \\
+     \textbf{Libraries}{: NumPy, Pandas, Matplotlib, OpenCV}
     }}
  \end{itemize}
 
